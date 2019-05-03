@@ -1,11 +1,11 @@
 body {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   max-width: 36em;
   padding-left: .5em;
   padding-right: .5em;
   font-family: 'Fira Sans', sans-serif;
   line-height: 1.55;
-  background-color: #EFE8D8;
+  background-color: #F6F6F0;
 }
 
 footer {
