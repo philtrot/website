@@ -3,12 +3,13 @@ body {
   max-width: 35em;
   margin: auto;
   font-family: 'Fira Sans', sans-serif;
-  line-height: 1.45;
+  line-height: 1.55;
 }
 
 h1, h2, h3 {
   margin-top: .7em;
   margin-bottom: .2em;
+  line-height: 1.4;
 }
 
 footer p {
