@@ -1,8 +1,18 @@
 body {
   font-size: 1.2rem;
-  max-width: 37em;
+  max-width: 35em;
   margin: auto;
   font-family: 'Fira Sans', sans-serif;
+  line-height: 1.45;
+}
+
+h1, h2, h3 {
+  margin-top: .7em;
+  margin-bottom: .3em;
+}
+
+p {
+  margin-top: .3em;
 }
 
 nav ul {
