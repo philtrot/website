@@ -1,0 +1,17 @@
+body {
+  font-size: 1.2rem;
+  max-width: 37em;
+  margin: auto;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+}
+
+pre {
+  font-size: .8rem;
+}
