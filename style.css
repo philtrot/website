@@ -7,6 +7,10 @@ body {
   background-color: #EFE8D8;
 }
 
+footer {
+  margin-top: 2em;
+}
+
 h1, h2, h3 {
   margin-top: .7em;
   margin-bottom: .2em;
