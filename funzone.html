@@ -51,8 +51,11 @@
     setInterval(function(){
       var dx = mouseX - curX;
       var dy = mouseY - curY;
-      speedX += 100/dx;
-      speedY += 100/dy;
+      var distsq = dx*dx + dy*dy;
+      var dist = Math.sqrt(distsq);
+      var mag = 5000 / distsq;
+      speedX += dx/dist * mag;
+      speedY += dy/dist * mag;
       speedX *= .8;
       speedY *= .8;
       curX += speedX;
