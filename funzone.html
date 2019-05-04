@@ -41,14 +41,18 @@
     var curY = 0 + box.height/2;
     var speedX = 0;
     var speedY = 0;
+    var mouseX = 0;
+    var mouseY = 0;
     function update_speed(event) {
-      var dx = curX - event.pageX;
-      var dy = curY - event.pageY;
-      speedX = 100/dx;
-      speedY = 100/dy;
+      mouseX = event.pageX;
+      mouseY = event.pageY;
     }
 
     setInterval(function(){
+      var dx = mouseX - curX;
+      var dy = mouseY - curY;
+      speedX = 100/dx;
+      speedY = 100/dy;
       curX += speedX;
       curY += speedY;
       box.style.position = "absolute";
