@@ -43,7 +43,7 @@
     var speedY = 0;
     var mouseX = 0;
     var mouseY = 0;
-    function update_speed(event) {
+    function update_mouse(event) {
       mouseX = event.pageX;
       mouseY = event.pageY;
     }
@@ -51,8 +51,10 @@
     setInterval(function(){
       var dx = mouseX - curX;
       var dy = mouseY - curY;
-      speedX = 100/dx;
-      speedY = 100/dy;
+      speedX += 100/dx;
+      speedY += 100/dy;
+      speedX *= .8;
+      speedY *= .8;
       curX += speedX;
       curY += speedY;
       box.style.position = "absolute";
@@ -60,9 +62,9 @@
       box.style.left = curX + "px";
     }, 10);
 
-    whole.addEventListener("mousemove", update_speed, false);
-    whole.addEventListener("mouseenter", update_speed, false);
-    whole.addEventListener("mouseleave", update_speed, false);
+    whole.addEventListener("mousemove", update_mouse, false);
+    whole.addEventListener("mouseenter", update_mouse, false);
+    whole.addEventListener("mouseleave", update_mouse, false);
   </script>
 
 </body>
