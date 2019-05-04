@@ -34,6 +34,27 @@
     <p>You have reached the end of the page.</p>
   </footer>
 
+  <script>
+    var whole = document.querySelector("html");
+    var box = document.querySelector("#welcome");
+    var curX = 0 + box.width/2;
+    var curY = 0 + box.height/2;
+    function tick(event) {
+      var dx = curX - event.pageX;
+      var dy = curY - event.pageY;
+      var distsq = dx*dx+dy*dy;
+      var mult = 81000000000/(distsq*distsq) - distsq/1000000;
+      curX += mult*dx;
+      curY += mult*dy;
+
+      box.style.left = curX + "px";
+      box.style.top = curY + "px";
+    }
+    whole.addEventListener("mousemove", tick, false);
+    whole.addEventListener("mouseenter", tick, false);
+    whole.addEventListener("mouseleave", tick, false);
+  </script>
+
 </body>
 
 </html>
