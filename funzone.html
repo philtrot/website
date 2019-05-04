@@ -51,6 +51,7 @@
     setInterval(function(){
       curX += speedX;
       curY += speedY;
+      box.style.position = "absolute";
       box.style.top = curY + "px";
       box.style.left = curX + "px";
     }, 10);
