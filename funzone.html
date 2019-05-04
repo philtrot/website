@@ -37,8 +37,8 @@
   <script>
     var whole = document.querySelector("html");
     var box = document.querySelector("#welcome");
-    var curX = 0 + box.width/2;
-    var curY = 0 + box.height/2;
+    var curX = 0;
+    var curY = 0;
     var speedX = 0;
     var speedY = 0;
     var mouseX = 0;
@@ -49,11 +49,11 @@
     }
 
     setInterval(function(){
-      var dx = mouseX - curX;
-      var dy = mouseY - curY;
+      var dx = mouseX - curX - box.width/2;
+      var dy = mouseY - curY - box.height/2;
       var distsq = dx*dx + dy*dy;
       var dist = Math.sqrt(distsq);
-      var mag = -50000 / distsq;
+      var mag = -50000 / distsq + distsq*distsq / 1000000;
       speedX += dx/dist * mag;
       speedY += dy/dist * mag;
       speedX *= .8;
