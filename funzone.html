@@ -44,20 +44,8 @@
     var mouseX = 0;
     var mouseY = 0;
     var updcnt = 0;
-    function update_mouse(event) {
-      if (updcnt < 100) {
-        updcnt++;
-      }
-      if (updcnt == 10) {
-        box.style.visibility = "visible";
-      }
-      mouseX = event.pageX;
-      mouseY = event.pageY;
-    }
-    box.style.position = "absolute";
-    box.style.visibility = "hidden";
 
-    setInterval(function(){
+    function tick() {
       var dx = mouseX - curX - box.width/2;
       var dy = mouseY - curY - box.height/2;
       var distsq = dx*dx + dy*dy;
@@ -71,8 +59,22 @@
       curY += speedY;
       box.style.top = curY + "px";
       box.style.left = curX + "px";
-    }, 10);
+    }
 
+    function update_mouse(event) {
+      if (updcnt < 100) {
+        updcnt++;
+      }
+      if (updcnt == 10) {
+        box.style.visibility = "visible";
+        setInterval(tick, 10);
+      }
+      mouseX = event.pageX;
+      mouseY = event.pageY;
+    }
+
+    box.style.position = "absolute";
+    box.style.visibility = "hidden";
     whole.addEventListener("mousemove", update_mouse, false);
     whole.addEventListener("mouseenter", update_mouse, false);
     whole.addEventListener("mouseleave", update_mouse, false);
