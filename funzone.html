@@ -43,10 +43,19 @@
     var speedY = 0;
     var mouseX = 0;
     var mouseY = 0;
+    var updcnt = 0;
     function update_mouse(event) {
+      if (updcnt < 100) {
+        updcnt++;
+      }
+      if (updcnt == 10) {
+        box.style.visibility = "visible";
+      }
       mouseX = event.pageX;
       mouseY = event.pageY;
     }
+    box.style.position = "absolute";
+    box.style.visibility = "hidden";
 
     setInterval(function(){
       var dx = mouseX - curX - box.width/2;
@@ -60,7 +69,6 @@
       speedY *= .9;
       curX += speedX;
       curY += speedY;
-      box.style.position = "absolute";
       box.style.top = curY + "px";
       box.style.left = curX + "px";
     }, 10);
