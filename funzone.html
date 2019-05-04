@@ -65,8 +65,8 @@
       var mag = -8000 / distsq + distsq*distsq / 100000000000;
       speedX += dx/dist * mag;
       speedY += dy/dist * mag;
-      speedX *= .9;
-      speedY *= .9;
+      speedX *= .98;
+      speedY *= .98;
       curX += speedX;
       curY += speedY;
       box.style.top = curY + "px";
