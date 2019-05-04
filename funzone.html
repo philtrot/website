@@ -53,7 +53,7 @@
       var dy = mouseY - curY;
       var distsq = dx*dx + dy*dy;
       var dist = Math.sqrt(distsq);
-      var mag = 5000 / distsq;
+      var mag = -50000 / distsq;
       speedX += dx/dist * mag;
       speedY += dy/dist * mag;
       speedX *= .8;
