@@ -28,12 +28,13 @@
 
 body {
   font-size: 18px;
-  max-width: 36em;
+  max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
   font-family: 'CooperHewitt', sans-serif;
   line-height: 1.4;
   background-color: #F6F6F0;
+  text-rendering: optimizeLegibility;
 }
 
 footer {
