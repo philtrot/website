@@ -2,14 +2,14 @@
   font-family: 'CooperHewitt';
   font-style: normal;
   font-weight: normal;
-  src: url('CooperHewitt-Medium.woff') format('woff');
+  src: url('CooperHewitt-Book.woff') format('woff');
 }
 
 @font-face {
   font-family: 'CooperHewitt';
   font-style: italic;
   font-weight: normal;
-  src: url('CooperHewitt-MediumItalic.woff') format('woff');
+  src: url('CooperHewitt-BookItalic.woff') format('woff');
 }
 
 @font-face {
