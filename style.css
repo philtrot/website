@@ -54,4 +54,7 @@ a {
 
 pre {
   font-size: .8rem;
+  background-color: #FBFBFF;
+  border: solid 1px #363630;
+  padding: .5em;
 }
