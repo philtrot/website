@@ -48,7 +48,7 @@
     function tick() {
       var dx = mouseX - curX - box.width/2;
       var dy = mouseY - curY - box.height/2;
-      var distsq = dx*dx + dy*dy;
+      var distsq = Math.max(8, dx*dx + dy*dy);
       var dist = Math.sqrt(distsq);
       var mag = -8000 / distsq + distsq*distsq / 100000000000;
       speedX += dx/dist * mag;
