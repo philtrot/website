@@ -57,7 +57,7 @@
 }
 
 body {
-  font-size: 22px;
+  font-size: 1.3rem;
   max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
@@ -103,7 +103,7 @@ a:visited {
 }
 
 pre {
-  font-size: .65em;
+  font-size: .8em;
   background-color: #FFFAFA;
   border: solid 1px #CCCACA;
   padding: .5em;
