@@ -1,3 +1,4 @@
+/*
 @font-face {
   font-family: 'CooperHewitt';
   font-style: normal;
@@ -25,14 +26,43 @@
   font-weight: bold;
   src: url('CooperHewitt-BoldItalic.woff') format('woff');
 }
+*/
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: normal;
+  src: url('charter_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: normal;
+  src: url('charter_italic-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: normal;
+  font-weight: bold;
+  src: url('charter_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Charter';
+  font-style: italic;
+  font-weight: bold;
+  src: url('charter_bold_italic-webfont.woff') format('woff');
+}
 
 body {
   font-size: 22px;
   max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
-  font-family: 'CooperHewitt', sans-serif;
-  line-height: 1.4;
+  font-family: 'Charter', sans-serif;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
 
