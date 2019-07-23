@@ -61,7 +61,7 @@ body {
   max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
-  font-family: 'Charter', sans-serif;
+  font-family: 'Charter', 'Georgia', 'Times', serif;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
 }
