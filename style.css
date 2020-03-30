@@ -26,7 +26,7 @@
   font-weight: bold;
   src: url('CooperHewitt-BoldItalic.woff') format('woff');
 }
-
+*/
 @font-face {
   font-family: 'Charter';
   font-style: normal;
@@ -54,7 +54,7 @@
   font-weight: bold;
   src: url('charter_bold_italic-webfont.woff') format('woff');
 }
-*/
+
 
 p {
   margin-top: .6em;
@@ -66,7 +66,7 @@ body {
   max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
-  font-family: 'Georgia', 'Times', serif;
+  font-family: 'Charter', 'Georgia', 'Times', serif;
   line-height: 1.4;
   text-rendering: optimizeLegibility;
 }
