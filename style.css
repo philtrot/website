@@ -56,6 +56,10 @@
 }
 */
 
+p {
+  margin-top: .6em;
+  margin-bottom: .6em;
+}
 
 body {
   font-size: 1.3rem;
