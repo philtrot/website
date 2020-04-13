@@ -55,10 +55,9 @@
   src: url('charter_bold_italic-webfont.woff') format('woff');
 }
 
-
 p {
-  margin-top: .8em;
-  margin-bottom: .8em;
+  margin-top: 0;
+  margin-bottom: .7em;
 }
 
 body {
@@ -67,7 +66,7 @@ body {
   padding-left: .5em;
   padding-right: .5em;
   font-family: 'Charter', 'Georgia', 'Times', serif;
-  line-height: 1.4;
+  line-height: 1.35;
   text-rendering: optimizeLegibility;
 }
 
@@ -75,10 +74,17 @@ footer {
   margin-top: 2em;
 }
 
-h1, h2, h3 {
-  margin-top: 1.2rem;
-  margin-bottom: .8rem;
-  line-height: 1;
+h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: .5em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 2em;
+  margin-bottom: .53846em;
   font-weight: normal;
 }
 
