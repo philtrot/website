@@ -88,6 +88,14 @@ h2 {
   font-weight: normal;
 }
 
+h3 {
+    font-size: .9em;
+    font-weight: normal;
+    color: #666;
+    margin-top: 2em;
+    margin-bottom: .875em;
+}
+
 footer p {
   color: #777;
   font-size: .8em;
