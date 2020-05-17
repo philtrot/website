@@ -136,12 +136,6 @@ pre {
     text-align: left;
 }
 
-.goaltable th.singlechar {
-    max-width: 3.5em;
-    min-width: 3.5em;
-    padding-right: 0;
-}
-
 .goaltable td {
     padding-right: 1em;
 }
