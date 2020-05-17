@@ -131,7 +131,7 @@ pre {
 .goaltable th {
     font-weight: normal;
     font-size: .9em;
-    color: #33A;
+    color: #850;
     padding-right: 1em;
     text-align: left;
 }
@@ -140,4 +140,8 @@ pre {
     max-width: 2.5em;
     min-width: 2.5em;
     padding-right: 0;
+}
+
+.goaltable td {
+    padding-right: 1em;
 }
