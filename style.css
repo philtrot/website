@@ -133,6 +133,11 @@ pre {
     font-size: .9em;
     color: #33A;
     padding-right: 1em;
-    min-width: 4em;
     text-align: left;
+}
+
+.goaltable th.singlechar {
+    max-width: 2.5em;
+    min-width: 2.5em;
+    padding-right: 0;
 }
