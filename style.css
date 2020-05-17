@@ -149,3 +149,9 @@ pre {
 .goaltable {
     white-space: nowrap;
 }
+
+.goaltable input {
+    font: inherit;
+    border: 0;
+    padding: 0;
+}
