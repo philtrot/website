@@ -145,3 +145,7 @@ pre {
 .goaltable td {
     padding-right: 1em;
 }
+
+.goaltable {
+    white-space: nowrap;
+}
