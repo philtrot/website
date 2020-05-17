@@ -127,3 +127,12 @@ pre {
   border: solid 1px #CCCACA;
   padding: .5em;
 }
+
+.goaltable th {
+    font-weight: normal;
+    font-size: .9em;
+    color: #33A;
+    padding-right: 1em;
+    min-width: 4em;
+    text-align: left;
+}
