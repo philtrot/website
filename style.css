@@ -60,9 +60,15 @@ p {
   margin-bottom: .7em;
 }
 
+@media only screen and (max-width: 480px) {
 body {
-  font-size: 1.3rem;
-  max-width: 31em;
+  font-size: 30px;
+}
+}
+
+body {
+  font-size: 20px;
+  max-width: 33em;
   padding-left: .5em;
   padding-right: .5em;
   font-family: 'Charter', 'Georgia', 'Times', serif;
